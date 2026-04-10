@@ -25,9 +25,9 @@ const Contact = () => {
     setLoading(true);
     setStatus(null);
 
-    const SERVICE_ID = "service_jta5e39"; 
-    const TEMPLATE_ID = "template_gcf3bo9";
-    const PUBLIC_KEY = "HdEdx8gbGRXzI7S32";
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID; 
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs
       .send(
